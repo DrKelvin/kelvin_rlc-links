@@ -1,0 +1,142 @@
+/* = Imports = */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* = Variables = */
+
+:root{
+    --bg-color-main: #EFECEA;
+    --main-color: #489FB5;
+    --dark-color: #30292F;
+    --light-green-color: #6DC173;
+    --dark-green-color: #025448;
+}
+
+/* = Body = */
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-main);
+}
+
+/* = Main = */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 33rem;
+    width: 26rem;
+    background-color: #FFFFFF;
+    border-radius: 0.9rem;
+    filter: drop-shadow(8px 12px 4px #0000007b);
+}
+
+/* = Card = */
+
+#card{
+    height: 45%;
+    width: 80%;
+    background: linear-gradient(181deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.9rem;
+}
+
+#card img{
+    height: 6rem;
+    background-color: transparent;
+}
+
+#card span{
+    width: 6rem;
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--main-color);
+}
+
+/* == Infos == */
+
+#card .infos{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card .infos .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card .infos .info img{
+    height: 1rem;
+    width: 1rem;
+}
+
+#card .infos .info p{
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 400;
+}
+
+/* = Buttons = */
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45%;
+    width: 80%;
+    border-radius: 0.9rem;
+    background: linear-gradient(359deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+
+#buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 1rem 0;
+    border-radius: 0.9rem;
+    text-decoration: none;
+    font-family: 'Share', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#buttons a:nth-child(1){
+    background-color: var(--main-color);
+    color: white;
+}
+
+#buttons a:nth-child(2){
+    background-color: var(--light-green-color);
+    color: white;
+}
+
+#buttons a:nth-child(3){
+    background-color: var(--dark-color);
+    color: white;
+}
+
+/* = Media Queries = */
+
+@media screen and (max-width: 440px){
+    main{
+        width: 21rem;
+    }
+}
+
+
